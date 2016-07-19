@@ -1,0 +1,92 @@
+label {
+    display: block;
+    font-weight: bold;
+    padding-top: 1em;
+}
+
+label[hidden="true"] {
+    display: none;
+}
+label.error::after {
+    content: "*";
+    color: red;
+    display: inline-block;
+}
+
+div.form-group > label {
+    display: inline-block;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+input:valid:not(input[value=""]) {
+    border: 1px solid green;
+}
+
+label, input {
+    font-size: 1.2em;
+}
+
+#cu-SubmissionError {
+    display: none;
+    background-color: rgba(206, 14, 14, 0.36);
+    color: rgb(206, 14, 14);
+    padding: 5px 30px;
+    border: 2px solid rgb(206, 14, 14);
+    border-radius: 4px;
+    text-align: center;
+}
+#cu-SubmissionError.error {
+    display: block;
+}
+#cu-SubmissionSuccess {
+    display: none;
+    text-align: center;
+    margin: 200px auto;
+}
+#cu-SubmissionSuccess>* {
+    background-color: rgba(118, 206, 51, 0.45);
+    color: rgb(118, 206, 51);
+    padding: 5px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(118, 206, 51);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#cu-SubmissionSuccess a {
+    color: rgb(118, 206, 51);
+}
+
+.success #cu-SubmissionSuccess {
+    display: block;
+}
+
+.success #ContactUs {
+    display: none;
+}
+
+#submitFieldset {
+    text-align: center;
+    background-color: #232323;
+}
+#ContactUs {
+    margin: 8px;
+    max-width: 400px;
+    min-width: 325px;
+}
+/*#submitFieldset button {
+    background-color: #4d4e4f;
+    border-radius: 8px;
+    padding: 4px 14px;
+    color: white;
+    font-size: 1em;
+}
+#submitFieldset button[type="reset"] {
+    background-color: red;
+}
+#submitFieldset button[type="submit"] {
+    background-color: limegreen;
+}*/

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <!-- Begin Global Head Content -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- End Global Head Content -->
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+<!-- Begin Global header -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="foo.html">foo</a></li>
+        </ul>
+        <span id="domain_banner">Wirehopper.net<span id="subdomain">/~ethan</span></span>
+    </nav>
+</header>
+<!-- End Global header -->
+<section>
+    <form id="ContactUs" name="ContactUs" action="/~bgamrat/submit.php" method="post">
+        <!-- I used "get" only for proof of concept during the testing of this Lab -->
+        <fieldset>
+            <legend>Contact Us</legend>
+            <span id="cu-SubmissionError">Request could not be completed</span>
+            <label for="cu-Name">Name</label>
+            <input type="text" placeholder="Name" id="cu-Name" name="name" required pattern="[A-Z][a-z]+(\s[a-z]*[A-Z][A-Za-z]+)*" >
+
+            <label for="cu-Email">Email</label>
+            <input type="email" placeholder="Email" id="cu-Email" name="email" required>
+
+            <label for="cu-Phone">Phone</label>
+            <input type="tel" placeholder="Phone" id="cu-Phone" name="phone" pattern="[0-9- ()+]+" required>
+
+            <label for="cu-Status">Status</label>
+            <select id="cu-Status" name="status">
+                <option>Vendor</option>
+                <option selected>Client</option>
+                <option>Partner</option>
+            </select>
+
+            <div class="form-group">
+                <input type="checkbox" id="cu-Subscribe" name="newsletter" checked>
+                <label for="cu-Subscribe">Send me your newsletter</label>
+            </div>
+
+            <div class="form-group">
+                <input type="radio" id="cu-Depart-Sales" name="type" value="sales">
+                <label for="cu-Depart-Sales">Sales</label>
+
+                <input type="radio" id="cu-Depart-Support" name="type" value="support" checked>
+                <label for="cu-Depart-Support">Support</label>
+            </div>
+
+            <label for="cu-Message">Message</label>
+            <textarea placeholder="Message" id="cu-Message" name="message" cols="35" rows="4"></textarea>
+
+        </fieldset>
+        <fieldset id="submitFieldset">
+            <button type="submit" id="btnSubmit">Send</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+    <div id="cu-SubmissionSuccess">
+        <div>
+            <span>Your submission has been recieved.</span>
+            <br>
+            <span>Thank you.</span>
+            <br>
+            <br>
+            <a href="#" id="tryAgain">Retry</a>
+        </div>
+    </div>
+
+</section>
+<script type="text/javascript" src="js/jsToolbox.js"></script>
+<script type="text/javascript" src="js/contact.js" defer></script>
+<script type="text/javascript" src="js/validate.js" defer></script>
+
+<!-- Begin Global footer -->
+<footer>
+</footer>
+<script type="text/javascript" src="js/page.js"></script>
+<!-- End Global footer -->
+</body>
+</html>

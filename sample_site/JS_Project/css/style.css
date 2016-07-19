@@ -1,0 +1,94 @@
+h1, h2, h3, h4, h5, a, span, label, legend {
+    font-family: sans-serif;
+}
+body {
+    margin: 0px;
+}
+header {
+    padding: 0px;
+    background-color: #232323;
+    box-sizing: content-box;
+    height: 72px;
+}
+nav {
+    white-space: nowrap;
+    overflow: scroll;
+    padding: 0 20px;
+    scroll-behavior: smooth;
+}
+header::before, header::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 72px;
+    pointer-events: none;
+    max-height: inherit;
+}
+
+header::before {
+    background-image: linear-gradient(to right, rgba(28, 28, 28, 1), rgba(28, 28, 28, 0));
+}
+header::after {
+    right: 0px;
+    top: 0px;
+    background-image: linear-gradient(to left, rgba(28, 28, 28, 1), rgba(28, 28, 28, 0));
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px 20px;
+    transition-duration: 220ms;
+    margin: 0px;
+    background-clip: border-box;
+}
+
+nav a {
+    color: #bebebe;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition-duration: 220ms;
+}
+
+nav a:visited {
+    color: #bebebe;
+}
+
+nav li:hover {
+    background-color: #bebebe;
+    transition-duration: 220ms;
+}
+
+nav li:hover a {
+    color: #232323;
+    transition-duration: 220ms;
+}
+
+nav li:not(.cur_page) {
+    border-bottom: 8px solid transparent;
+}
+.cur_page {
+    border-bottom: 8px solid #2f7eef;
+}
+
+
+#domain_banner {
+    color: #4d4e4f;
+    font-size: 2em;
+    padding: 0;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+#subdomain {
+    font-size: 0.8em;
+    color: #bebebe;
+}

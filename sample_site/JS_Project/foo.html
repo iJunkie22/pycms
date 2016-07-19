@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>foo</title>
+    <!-- Begin Global Head Content -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- End Global Head Content -->
+</head>
+<body>
+<!-- Begin Global header -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="foo.html">foo</a></li>
+        </ul>
+        <span id="domain_banner">Wirehopper.net<span id="subdomain">/~ethan</span></span>
+    </nav>
+</header>
+<!-- End Global header -->
+<h1>
+<a id="user-content-4---positioning-and-layout-with-css" class="anchor" href="#4---positioning-and-layout-with-css" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4 - Positioning And Layout With CSS</h1>
+
+<h1></h1>
+
+<h2>
+<a id="user-content-positioning" class="anchor" href="#positioning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Positioning</h2>
+
+<ul>
+<li>
+<strong>Static</strong>
+<code>css
+position: static;
+</code>
+</li>
+<li>
+<strong>Relative</strong>
+CSS:
+
+<ul>
+<li>
+<strong>Absolute</strong>
+<code>css
+position: absolute;
+</code>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Fixed</strong>
+This stays in place regardless of scrolling</p>
+
+<div class="highlight highlight-source-css"><pre>position: fixed;</pre></div>
+
+<h2>
+<a id="user-content-other-css-traits" class="anchor" href="#other-css-traits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Other CSS traits</h2>
+
+<p>These specify the offsets:</p>
+
+<div class="highlight highlight-source-css"><pre>element{
+    <span class="pl-c1"><span class="pl-c1">left</span></span>|<span class="pl-c1"><span class="pl-c1">right</span></span>|<span class="pl-c1"><span class="pl-c1">top</span></span>|<span class="pl-c1"><span class="pl-c1">bottom</span></span>: <span class="pl-c1">25<span class="pl-k">px</span></span>;
+    <span class="pl-c1"><span class="pl-c1">float</span></span>: <span class="pl-c1">left</span>|<span class="pl-c1">right</span>;
+    <span class="pl-c1"><span class="pl-c1">clear</span></span>: <span class="pl-c1">left</span>|<span class="pl-c1">right</span>|<span class="pl-c1">both</span>;
+    }</pre></div>
+</li>
+</ul>
+
+<p><em>This makes the float reserve the specified zone instead of sharing.</em></p>
+
+<h2>
+<a id="user-content-layering" class="anchor" href="#layering" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Layering</h2>
+
+<p><code>z-index: [NUM];</code>
+<em>This specifies which layer it should be sorted as</em></p>
+
+<h1></h1>
+
+<h1>
+<a id="user-content-5---links" class="anchor" href="#5---links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5 - Links</h1>
+
+<h1></h1>
+
+<h2>
+<a id="user-content-page-anchors" class="anchor" href="#page-anchors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Page Anchors</h2>
+
+<h1></h1>
+
+<h2>
+<a id="user-content-e-mail-links" class="anchor" href="#e-mail-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>E-mail Links</h2>
+
+<p>Directly open default email client</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>maito:adam@mail.com?subject=Web mail<span class="pl-pds">"</span></span>&gt;Email us!&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+
+<h1></h1>
+
+<h2>
+<a id="user-content-styling-links" class="anchor" href="#styling-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Styling Links</h2>
+
+<div class="highlight highlight-source-css"><pre>    <span class="pl-ent">a</span><span class="pl-e">:link</span> {
+        <span class="pl-c1"><span class="pl-c1">color</span></span>: <span class="pl-c1">green</span>;
+        }
+    <span class="pl-ent">a</span><span class="pl-e">:visited</span> {
+        <span class="pl-c">/* This is visited */</span>
+        }
+    <span class="pl-ent">a</span><span class="pl-e">:hover</span> {
+        <span class="pl-c">/* This is mouse-over */</span>
+        }
+    <span class="pl-ent">a</span><span class="pl-e">:active</span> {
+        <span class="pl-c">/* This is when held or loading */</span>
+        }       </pre></div>
+
+<h1></h1>
+
+<h2>
+<a id="user-content-adding-images" class="anchor" href="#adding-images" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding Images</h2>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://purple.com/sample.png<span class="pl-pds">"</span></span> <span class="pl-e">Alt</span>=<span class="pl-s"><span class="pl-pds">"</span>A sample image from purple.com<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<h1></h1>
+
+<h2>
+<a id="user-content-image-maps" class="anchor" href="#image-maps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Image Maps</h2>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>folder/image.png<span class="pl-pds">"</span></span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>200<span class="pl-pds">"</span></span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>150<span class="pl-pds">"</span></span> <span class="pl-e">usemap</span>=<span class="pl-s"><span class="pl-pds">"</span>#Image ID<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">map</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>Image ID<span class="pl-pds">"</span></span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>Image ID<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">area</span> <span class="pl-e">title</span>=<span class="pl-s"><span class="pl-pds">"</span>Access Google.<span class="pl-pds">"</span></span> <span class="pl-e">shape</span>=<span class="pl-s"><span class="pl-pds">"</span>rect<span class="pl-pds">"</span></span> <span class="pl-e">coords</span>=<span class="pl-s"><span class="pl-pds">"</span>x,y,x,y<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>http://google.com<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">area</span> <span class="pl-e">title</span>=<span class="pl-s"><span class="pl-pds">"</span>Access Yahoo.<span class="pl-pds">"</span></span> <span class="pl-e">shape</span>=<span class="pl-s"><span class="pl-pds">"</span>rect<span class="pl-pds">"</span></span> <span class="pl-e">coords</span>=<span class="pl-s"><span class="pl-pds">"</span>x,y,x,y<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>http://yahoo.com<span class="pl-pds">"</span></span>&gt;
+&lt;<span class="pl-ent">area</span> <span class="pl-e">title</span>=<span class="pl-s"><span class="pl-pds">"</span>Access Bing.<span class="pl-pds">"</span></span> <span class="pl-e">shape</span>=<span class="pl-s"><span class="pl-pds">"</span>circle<span class="pl-pds">"</span></span> <span class="pl-e">coords</span>=<span class="pl-s"><span class="pl-pds">"</span>x,y,r<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>http://bing.com<span class="pl-pds">"</span></span>&gt;
+&lt;/<span class="pl-ent">map</span>&gt;</pre></div>
+
+<h1></h1>
+
+<h1>
+<a id="user-content-6---tables" class="anchor" href="#6---tables" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6 - Tables</h1>
+
+<p><strong>border-style</strong>:</p>
+
+<ul>
+<li>dashed</li>
+<li>dotted</li>
+<li>double</li>
+<li>groove</li>
+<li>hidden</li>
+<li>inset</li>
+<li>outset</li>
+<li>solid</li>
+<li>ridge</li>
+</ul>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-ent">table</span> {
+    <span class="pl-c1"><span class="pl-c1">border</span></span>: <span class="pl-c1">solid</span> <span class="pl-c1">2<span class="pl-k">px</span></span> <span class="pl-c1">#000</span>;
+    }</pre></div>
+
+<p><strong>border-collapse</strong> : remove border-caused spacing
+<strong>border-spacing</strong> : (measured in px)</p>
+
+<p><strong>Alternating styles</strong>:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-ent">tr</span>:nth:even {
+    <span class="pl-c1">backgound</span>: <span class="pl-id">grey</span>;
+    }</pre></div>
+
+<h1></h1>
+
+<h1>
+<a id="user-content-7---forms" class="anchor" href="#7---forms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7 - Forms</h1>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">form</span> <span class="pl-e">action</span>=<span class="pl-s"><span class="pl-pds">"</span>scripts/sample.py<span class="pl-pds">"</span></span> <span class="pl-e">method</span>=<span class="pl-s"><span class="pl-pds">"</span>POST<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>moo<span class="pl-pds">"</span></span> <span class="pl-e">ID</span>=<span class="pl-s"><span class="pl-pds">"</span>mmoooo<span class="pl-pds">"</span></span>&gt;
+ &lt;/<span class="pl-ent">form</span>&gt;</pre></div>
+
+<p><em>**method</em><em>\</em> either <em>**GET</em><em>\</em> or <strong><em>POST</em></strong>
+The <strong><em>GET</em></strong> method appends a url-encoded string to the target url to send the data</p>
+
+<p>The <strong><em>POST</em></strong> method uses an encoded string sent in the header</p>
+
+<ul>
+<li>More secure</li>
+<li>Enctype=multitype(or plaintext)</li>
+</ul>
+
+<p><strong><em></em></strong>
+<strong><em></em></strong>
+<strong><em>remember that we access via</em></strong>
+http://sftweb01/Lastname/Pacific
+aka
+http://sftweb01/Randall/Pacific</p>
+
+<h2>
+<a id="user-content-form-controls" class="anchor" href="#form-controls" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Form Controls</h2>
+
+<p>Input
+
+
+
+
+ Blue!
+ Green!
+ Cats!
+ Dogs!</p>
+
+<p>Button</p>
+
+<p>
+Kitty
+Doggie
+</p>
+
+<p>TextArea
+TextArea</p>
+
+<p><strong><em>Attributes:</em></strong></p>
+
+<ul>
+<li>type</li>
+<li>name</li>
+<li>value</li>
+<li>ID (Optional)</li>
+</ul>
+
+<h3>
+<a id="user-content-form-controls-input" class="anchor" href="#form-controls-input" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Form Controls: Input</h3>
+
+<p><strong><em>Attributes:</em></strong></p>
+
+<ul>
+<li>size (# of chars)</li>
+<li>maxlength (# of chars)</li>
+<li>value (set the default)</li>
+<li>autofocus</li>
+<li>autocomplete</li>
+<li>placeholder</li>
+<li>required</li>
+<li>accesskey (hotkey)</li>
+<li>tabindex</li>
+<li>ID (Optional)</li>
+<li>type (text,password,file,submit,reset)</li>
+<li>New types in HTML5
+
+<ul>
+<li>color</li>
+<li>date</li>
+<li>time</li>
+<li>month</li>
+<li>email</li>
+<li>url</li>
+<li>tel</li>
+<li>search</li>
+</ul>
+</li>
+<li>pattern (a regex pattern of what is allowed)</li>
+<li>datalist</li>
+</ul>
+
+<h3>
+<a id="user-content-form-controls-textarea" class="anchor" href="#form-controls-textarea" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Form Controls: TextArea</h3>
+
+<p><strong><em>Attributes:</em></strong></p>
+
+<ul>
+<li>value (set the default)</li>
+<li>cols (when to wordwrap)</li>
+<li>rows</li>
+<li>tabindex</li>
+<li>ID (Optional)</li>
+</ul>
+
+<!-- Begin Global footer -->
+<footer>
+</footer>
+<script type="text/javascript" src="js/page.js"></script>
+<!-- End Global footer -->
+</body>
+</html>
